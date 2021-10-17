@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/AleksandrFROLik/DZ_Ignat.git/static/css/main.e3c3f5ba.chunk.css",
+    "main.js": "/AleksandrFROLik/DZ_Ignat.git/static/js/main.8bda8379.chunk.js",
+    "main.js.map": "/AleksandrFROLik/DZ_Ignat.git/static/js/main.8bda8379.chunk.js.map",
+    "runtime-main.js": "/AleksandrFROLik/DZ_Ignat.git/static/js/runtime-main.d9eb32a7.js",
+    "runtime-main.js.map": "/AleksandrFROLik/DZ_Ignat.git/static/js/runtime-main.d9eb32a7.js.map",
+    "static/js/2.0d4151a4.chunk.js": "/AleksandrFROLik/DZ_Ignat.git/static/js/2.0d4151a4.chunk.js",
+    "static/js/2.0d4151a4.chunk.js.map": "/AleksandrFROLik/DZ_Ignat.git/static/js/2.0d4151a4.chunk.js.map",
+    "index.html": "/AleksandrFROLik/DZ_Ignat.git/index.html",
+    "static/css/main.e3c3f5ba.chunk.css.map": "/AleksandrFROLik/DZ_Ignat.git/static/css/main.e3c3f5ba.chunk.css.map",
+    "static/js/2.0d4151a4.chunk.js.LICENSE.txt": "/AleksandrFROLik/DZ_Ignat.git/static/js/2.0d4151a4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d9eb32a7.js",
+    "static/js/2.0d4151a4.chunk.js",
+    "static/css/main.e3c3f5ba.chunk.css",
+    "static/js/main.8bda8379.chunk.js"
+  ]
+}
