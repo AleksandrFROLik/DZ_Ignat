@@ -1,11 +1,13 @@
 import React from 'react'
 import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
+import style from './Affairs.module.css'
 
 type AffairsPropsType = { // need to fix any
     data: Array<AffairType>
     setFilter: (priority: FilterType)=>void
     deleteAffairCallback: (aID:number)=>void
+
 }
 
 function Affairs(props: AffairsPropsType) {
@@ -13,7 +15,10 @@ function Affairs(props: AffairsPropsType) {
         <Affair // should work
             key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
             affair={a}
+            name={a.name}
+            priority={a.priority}
             deleteAffairCallback={props.deleteAffairCallback}
+
         />
     ))
 
@@ -31,7 +36,7 @@ function Affairs(props: AffairsPropsType) {
     }
 
     return (
-        <div>
+        <div className={style.divButton}>
 
             {mappedAffairs}
 

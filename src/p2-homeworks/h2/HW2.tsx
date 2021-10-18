@@ -6,6 +6,7 @@ export type AffairPriorityType = 'high' | 'middle' | 'low' // need to fix any
 export type AffairType = {_id: number, name: string, priority: AffairPriorityType} // need to fix any
 export type FilterType = 'all' | AffairPriorityType
 
+
 // constants
 const defaultAffairs: AffairType[] = [ // need to fix any
     {_id: 1, name: 'React', priority: 'high'},
@@ -44,6 +45,7 @@ function HW2() {
 
             {/*should work (должно работать)*/}
             <Affairs
+
                 data={filteredAffairs}
                 setFilter={setFilter}
                 deleteAffairCallback={deleteAffairCallback}

@@ -1,3 +1,55 @@
 .someClass {
 
 }
+
+.button {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 6px 9px;
+    margin: 3px 5px;
+    border-radius: 1px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #4830F0 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+.button:hover {
+    background-position: right center;
+}
+
+ button {
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 6px 9px;
+    margin: 3px 6px;
+    border-radius: 1px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, greenyellow 0%, palegreen 51%, green 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+
+ button:hover {
+    background-position: right center;
+}
+
+.divAffairs {
+    display: flex;
+    flex-direction: row;
+
+}
+.divAffairs div {
+    width: 131px;
+    height: 38px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
