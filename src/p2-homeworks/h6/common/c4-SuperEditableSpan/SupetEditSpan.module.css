@@ -1,0 +1,15 @@
+.default {
+
+}
+
+.styleForSpan {
+    font-size: 18px;
+    color: blue;
+    margin-left: 8px;
+}
+
+.styleForSpan img {
+    height: 24px;
+
+}
+
