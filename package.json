@@ -20,7 +20,7 @@
     "uuid": "^8.3.2",
     "web-vitals": "^1.0.1"
   },
-  "homepage": "https://AleksandrFROLik.github.io/DZ_Ignat.git",
+  "homepage": "https://aleksandrfrolik.github.io/DZ_Ignat",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
