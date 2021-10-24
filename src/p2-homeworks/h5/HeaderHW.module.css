@@ -1,14 +1,45 @@
-.linkItems{
-
+.linkItems {
+    display: inline-block;
+    margin: 10px 0 10px 15px;
+    width: 280px;
+    transition-duration: 750ms;
+    transform: translate(-250px);
 }
 
-.linkItems  a {
+.linkItems:hover {
+    transition-duration: 750ms;
+    transform: translate(0);
+}
+
+.linkItems a {
     margin-right: 5px;
     text-decoration: none;
-    color: black;
+    color: green;
     border: 1px solid green;
     border-radius: 3px;
-    padding: 1px;
+    padding: 3px;
+}
+
+.linkItems a:hover {
+    color: yellowgreen;
+    font-weight: bold;
+}
+
+.active {
+    color: green;
+    font-weight: bold;
+}
+
+.block {
+    display: inline-block;
+
+    height: 20px;
+    width: 20px;
+
+    background-color: greenyellow;
+
+    padding-top: 3px;
 
 }
+
 
