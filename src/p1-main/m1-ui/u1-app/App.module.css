@@ -1,4 +1,30 @@
 .App {
-background: url("https://html5book.ru/wp-content/uploads/2015/06/background28.jpg") ;
-padding-left: 5px;
+    background: url("https://html5book.ru/wp-content/uploads/2015/06/background28.jpg");
+    padding-left: 5px;
+    height: auto;
+}
+
+.HW {
+    width: 350px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: 15px;
+    font-weight: bold;
+    color: #282c34;
+}
+
+.age {
+    font-size: 18px;
+    font-weight: bold;
+    color: midnightblue;
+}
+
+.button {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
 }
