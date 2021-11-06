@@ -3,7 +3,7 @@
     margin: 10px 0 10px 15px;
     width: 280px;
     transition-duration: 750ms;
-    transform: translate(-250px);
+    transform: translate(-245px);
 }
 
 .linkItems:hover {
@@ -12,7 +12,7 @@
 }
 
 .linkItems a {
-    margin-right: 5px;
+    margin-right: 4px;
     text-decoration: none;
     color: green;
     border: 1px solid green;
@@ -35,9 +35,8 @@
 
     height: 20px;
     width: 20px;
-
+    margin-left: 7px;
     background-color: greenyellow;
-
     padding-top: 3px;
 
 }

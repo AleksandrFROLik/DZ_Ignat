@@ -5,12 +5,12 @@ import style from '../../p1-main/m1-ui/u1-app/App.module.css'
 
 export type UserType = {
     _id: number
-    name:string
-    age:number
+    name: string
+    age: number
 }
 export type initialPeopleType = Array<UserType>
 
-const initialPeople:initialPeopleType = [
+const initialPeople: initialPeopleType = [
     {_id: 0, name: 'Кот', age: 3},
     {_id: 1, name: 'Александр', age: 66},
     {_id: 2, name: 'Коля', age: 16},
@@ -27,13 +27,14 @@ function HW8() {
         <div key={p._id}
              className={style.HW}
         >
-            <div className={style.name}>{p.name}</div><div className={style.age}>{p.age}</div>
+            <div className={style.name}>{p.name}</div>
+            <div className={style.age}>{p.age}</div>
         </div>
     ))
 
-    const check = () => setPeople(homeWorkReducer(initialPeople, {type: 'check',   payload: 18 }))
-    const sortDown = () => setPeople(homeWorkReducer(initialPeople, {type: 'sortDown', payload: 'down'}))
     const sortUp = () => setPeople(homeWorkReducer(initialPeople, {type: 'sortUp', payload: 'up'}))
+    const sortDown = () => setPeople(homeWorkReducer(initialPeople, {type: 'sortDown', payload: 'down'}))
+    const check = () => setPeople(homeWorkReducer(initialPeople, {type: 'check', payload: 18}))
 
     return (
         <div>
