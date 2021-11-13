@@ -14,7 +14,7 @@ function Clock() {
         stop()
         const id: number = window.setInterval(() => {
 
-            setDate(JSON.parse(stringTime))
+            setDate(new Date())
         }, 1000)
         setTimerId(id)
     }
@@ -26,8 +26,8 @@ function Clock() {
         setShow(false)
     }
 
-    const stringTime = `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`  // fix with date
-    const stringDate = `${date.getDay()}.${date.getMonth()}.${date.getFullYear()} ` // fix with date
+    const stringTime = date.toLocaleTimeString()  // fix with date
+    const stringDate = date.toLocaleDateString() // fix with date
 
     return (
         <div>
