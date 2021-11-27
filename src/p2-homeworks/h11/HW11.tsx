@@ -40,6 +40,8 @@ function HW11() {
                     // сделать так чтоб value1 и value2 изменялось
                 />
                 <span>{value2}</span>
+                <span>{value2}</span>
+                <span>{value2}</span>
             </div>
 
             <hr/>
