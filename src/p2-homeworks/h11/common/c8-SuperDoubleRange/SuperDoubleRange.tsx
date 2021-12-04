@@ -33,22 +33,19 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
 
     }
 
-    console.log(value)
-
     const finalRangeClassName = `${s.doubleInput} ${className ? className : ''}`
-
 
     return (
         <span className={s.doubleInput}>
             <span className={s.firstInput}><input
-                value={value1}
+                value={value2}
                 type={'range'}
                 onChange={onChangeCallback}
                 className={finalRangeClassName}
                 {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
             /></span>
             <span className={s.secondInput}><input
-                value={value2}
+                value={value1}
                 type={'range'}
                 onChange={onChangeCallback}
                 className={finalRangeClassName}
