@@ -5,8 +5,8 @@ import style from './Affairs.module.css'
 
 type AffairsPropsType = { // need to fix any
     data: Array<AffairType>
-    setFilter: (priority: FilterType)=>void
-    deleteAffairCallback: (aID:number)=>void
+    setFilter: (priority: FilterType) => void
+    deleteAffairCallback: (aID: number) => void
 
 }
 
@@ -18,7 +18,6 @@ function Affairs(props: AffairsPropsType) {
             name={a.name}
             priority={a.priority}
             deleteAffairCallback={props.deleteAffairCallback}
-
         />
     ))
 

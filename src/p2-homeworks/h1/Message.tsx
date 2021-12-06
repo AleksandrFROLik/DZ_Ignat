@@ -12,9 +12,9 @@ function Message(props: propsMessageType) {
     return (
         <div className={s.dialog}>
             <div className={s.avatar}>
-                <img className={s.pic} src={props.avatar}/>
+                <img className={s.pic} src={props.avatar} alt="elf"/>
             </div>
-            <div className={s.ugolok}></div>
+            <div className={s.ugolok}/>
             <div className={s.messageArea}>
                 <div>
                     <div className={s.name}>{props.name}</div>
@@ -23,9 +23,7 @@ function Message(props: propsMessageType) {
                     <div className={s.messageItem}>{props.message}</div>
                     <div className={s.time}>{props.time}</div>
                 </div>
-
             </div>
-
         </div>
     )
 }
