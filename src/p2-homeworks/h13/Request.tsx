@@ -6,26 +6,29 @@ import {requestAPI} from "./api/Request-API";
 const Request = () => {
 
     const [checked, setChecked] = useState<boolean>(false)
+    const [answer, setAnswer] = useState<string | null>('')
 
     const responseAPI = () => {
         requestAPI.createResponse(checked)
             .then((res) => {
-
+                setAnswer(res.statusText)
+                console.log(res.data)
             })
             .catch((e) => {
-
+                setAnswer(e.response ? e.response.data.errorText : e.message)
             })
     }
 
     return (
         <div>
-            <SuperButton onChange={responseAPI}>
+            <SuperButton onClick={responseAPI}>
                 Button API
             </SuperButton>
             <SuperCheckbox checked={checked}
-                           onChangeChecked={setChecked}>
-                Answer
+                           onChangeChecked={setChecked}
+                           >
             </SuperCheckbox>
+            {(answer)?.toUpperCase()}
 
         </div>
     );
